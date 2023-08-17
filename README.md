@@ -9,4 +9,5 @@ https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 https://git-scm.com/docs
 
 George was here
-oti thes esu kao push
+
+oti thes esu kai meta kane push
