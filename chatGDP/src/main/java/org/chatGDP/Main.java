@@ -19,7 +19,17 @@ public class Main {
         props.setProperty("password", "root");
         Connection conn = DriverManager.getConnection(url, props);
 
+        String query = "CREATE TABLE IF NOT EXISTS users (\n"
+                + "	id SERIAL PRIMARY KEY,\n"
+                + "	name VARCHAR(100) NOT NULL,\n"
+                + "	last_name VARCHAR(100) NOT NULL,\n"
+                + "	create_date DATE NOT NULL,\n"
+                + "	is_active BOOLEAN NOT NULL\n"
+                + ");";
+
+        conn.createStatement().execute(query);
 //        String url = "jdbc:postgresql://localhost/test?user=fred&password=secret&ssl=true";
 //        Connection conn = DriverManager.getConnection(url);
+
     }
 }
